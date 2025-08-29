@@ -178,7 +178,7 @@ const Home: React.FC = () => {
                   <div>
                     <Music className="w-8 h-8 mb-4" />
                     <h3 className="text-2xl font-bold mb-2">OUR ARTISTS</h3>
-                    <p className="text-white/60">POLLUXX • ZONE • SKATE</p>
+                    <p className="text-white/60">POLLUXX • SICELO WELO • SKATE</p>
                   </div>
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </div>

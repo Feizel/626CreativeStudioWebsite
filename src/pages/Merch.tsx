@@ -39,7 +39,7 @@ const Merch: React.FC = () => {
       colors: ['Black', 'White', 'Red']
     },
     {
-      name: "ZONE BOMBER JACKET",
+      name: "SICELO WELO BOMBER JACKET",
       price: "R1250",
       originalPrice: "R1450",
       image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400",

@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Music, Video, ExternalLink, Instagram, Youtube, Twitter } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Play,
+  Music,
+  Video,
+  ExternalLink,
+  Instagram,
+  Youtube,
+  Twitter,
+} from "lucide-react";
 
 const Artists: React.FC = () => {
   const [selectedArtist, setSelectedArtist] = useState(0);
@@ -9,84 +17,125 @@ const Artists: React.FC = () => {
     {
       name: "POLLUXX",
       genre: "Hip-Hop",
-      description: "A rising star in the hip-hop scene, POLLUXX brings raw energy and authentic storytelling to every track. Known for his distinctive flow and powerful lyricism that captures the essence of street culture.",
-      image: "https://images.pexels.com/photos/1906157/pexels-photo-1906157.jpeg?auto=compress&cs=tinysrgb&w=800",
-      modelingShots: [
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1321909/pexels-photo-1321909.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400"
-      ],
+      description:
+        "A rising star in the hip-hop scene, POLLUXX brings raw energy and authentic storytelling to every track. Known for his distinctive flow and powerful lyricism that captures the essence of street culture.",
+      image: "/Polluxx.JPG",
+      modelingShots: ["/Polluxx.JPG"],
       tracks: [
         { title: "Street Dreams", duration: "3:24", plays: "2.1M" },
         { title: "No Limit", duration: "2:58", plays: "1.8M" },
         { title: "Rise Up", duration: "3:45", plays: "3.2M" },
-        { title: "City Lights", duration: "4:12", plays: "1.5M" }
+        { title: "City Lights", duration: "4:12", plays: "1.5M" },
       ],
       videos: [
-        { title: "Street Dreams (Official Video)", thumbnail: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=400", views: "5.2M" },
-        { title: "No Limit (Live Performance)", thumbnail: "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=400", views: "2.8M" },
-        { title: "Rise Up (Behind the Scenes)", thumbnail: "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=400", views: "1.9M" }
+        {
+          title: "Street Dreams (Official Video)",
+          thumbnail:
+            "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "5.2M",
+        },
+        {
+          title: "No Limit (Live Performance)",
+          thumbnail:
+            "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "2.8M",
+        },
+        {
+          title: "Rise Up (Behind the Scenes)",
+          thumbnail:
+            "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "1.9M",
+        },
       ],
       social: {
-        instagram: "@polluxx_official",
+        instagram: "@iam_polluxx",
         youtube: "POLLUXX",
-        twitter: "@polluxx"
-      }
+        twitter: "@polluxx",
+      },
     },
     {
       name: "SICELO WELO",
       genre: "Hip-Hop & R&B",
-      description: "Zone seamlessly blends hip-hop and R&B, creating a unique sound that's both smooth and hard-hitting. His versatility and vocal range set him apart in the contemporary music scene.",
-      image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
+      description:
+        "Sicelo Welo seamlessly blends hip-hop and R&B, creating a unique sound that's both smooth and hard-hitting. His versatility and vocal range set him apart in the contemporary music scene.",
+      image: "/Welo.JPG",
       modelingShots: [
-        "https://images.pexels.com/photos/1906157/pexels-photo-1906157.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1464490/pexels-photo-1464490.jpeg?auto=compress&cs=tinysrgb&w=400"
+        "/Welo model 1.JPG",
+        "/Welo Model 2.JPG",
+        "/Welo Model 3.JPG",
+        "/Welo Model 4.JPG",
       ],
       tracks: [
         { title: "Midnight Vibes", duration: "4:12", plays: "4.5M" },
         { title: "Golden Hour", duration: "3:33", plays: "3.8M" },
         { title: "City Lights", duration: "3:18", plays: "2.9M" },
-        { title: "Smooth Operator", duration: "3:55", plays: "2.1M" }
+        { title: "Smooth Operator", duration: "3:55", plays: "2.1M" },
       ],
       videos: [
-        { title: "Midnight Vibes (Official Video)", thumbnail: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=400", views: "8.1M" },
-        { title: "Golden Hour (Acoustic)", thumbnail: "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=400", views: "3.5M" },
-        { title: "City Lights (Live Session)", thumbnail: "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400", views: "2.7M" }
+        {
+          title: "Midnight Vibes (Official Video)",
+          thumbnail:
+            "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "8.1M",
+        },
+        {
+          title: "Golden Hour (Acoustic)",
+          thumbnail:
+            "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "3.5M",
+        },
+        {
+          title: "City Lights (Live Session)",
+          thumbnail:
+            "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "2.7M",
+        },
       ],
       social: {
-        instagram: "@zone_music",
-        youtube: "ZoneOfficial",
-        twitter: "@zonemusic"
-      }
+        instagram: "@sicelo.welo",
+        youtube: "SiceloWeloOfficial",
+        twitter: "@sicelowelomusic",
+      },
     },
     {
       name: "SKATE",
       genre: "Hip-Hop & Trap",
-      description: "SKATE brings the heat with his trap-influenced beats and aggressive delivery. His music captures the essence of street culture and modern urban life with uncompromising authenticity.",
-      image: "https://images.pexels.com/photos/1321909/pexels-photo-1321909.jpeg?auto=compress&cs=tinysrgb&w=800",
-      modelingShots: [
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1906157/pexels-photo-1906157.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=400"
-      ],
+      description:
+        "SKATE brings the heat with his trap-influenced beats and aggressive delivery. His music captures the essence of street culture and modern urban life with uncompromising authenticity.",
+      image: "/Skate.JPG",
+      modelingShots: ["/Skate Model 1.JPG", "/Skate Model 2.JPG"],
       tracks: [
         { title: "Traphouse", duration: "2:45", plays: "6.2M" },
         { title: "Money Moves", duration: "3:21", plays: "5.8M" },
         { title: "Grind Time", duration: "3:02", plays: "4.1M" },
-        { title: "No Sleep", duration: "2:58", plays: "3.7M" }
+        { title: "No Sleep", duration: "2:58", plays: "3.7M" },
       ],
       videos: [
-        { title: "Traphouse (Official Video)", thumbnail: "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400", views: "12.3M" },
-        { title: "Money Moves (Behind the Scenes)", thumbnail: "https://images.pexels.com/photos/1464490/pexels-photo-1464490.jpeg?auto=compress&cs=tinysrgb&w=400", views: "4.8M" },
-        { title: "Grind Time (Live)", thumbnail: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=400", views: "3.2M" }
+        {
+          title: "Traphouse (Official Video)",
+          thumbnail:
+            "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "12.3M",
+        },
+        {
+          title: "Money Moves (Behind the Scenes)",
+          thumbnail:
+            "https://images.pexels.com/photos/1464490/pexels-photo-1464490.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "4.8M",
+        },
+        {
+          title: "Grind Time (Live)",
+          thumbnail:
+            "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=400",
+          views: "3.2M",
+        },
       ],
       social: {
-        instagram: "@skate_trap",
+        instagram: "@saymizane",
         youtube: "SKATEOfficial",
-        twitter: "@skatetrap"
-      }
-    }
+        twitter: "@skatetrap",
+      },
+    },
   ];
 
   const currentArtist = artists[selectedArtist];
@@ -112,7 +161,8 @@ const Artists: React.FC = () => {
               OUR ARTISTS
             </h1>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
-              MEET THE TALENTED ARTISTS WHO DEFINE THE SOUND OF 626 CREATIVE STUDIO
+              MEET THE TALENTED ARTISTS WHO DEFINE THE SOUND OF 626 CREATIVE
+              STUDIO
             </p>
           </motion.div>
 
@@ -125,8 +175,8 @@ const Artists: React.FC = () => {
                   onClick={() => setSelectedArtist(index)}
                   className={`px-8 py-4 rounded-lg font-bold tracking-wider transition-all duration-300 ${
                     selectedArtist === index
-                      ? 'bg-white text-black'
-                      : 'text-white/60 hover:text-white hover:bg-white/10'
+                      ? "bg-white text-black"
+                      : "text-white/60 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   {artist.name}
@@ -154,13 +204,18 @@ const Artists: React.FC = () => {
                 <motion.img
                   src={currentArtist.image}
                   alt={currentArtist.name}
-                  className="w-full h-96 object-cover border border-white/20"
+                  className={`w-full h-96 object-cover border border-white/20 ${
+                    currentArtist.name === "SKATE" ||
+                    currentArtist.name === "SICELO WELO"
+                      ? "object-top"
+                      : ""
+                  }`}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                 />
               </div>
-              
+
               <div>
                 <h2 className="text-5xl md:text-6xl font-black tracking-tighter mb-4">
                   {currentArtist.name}
@@ -171,25 +226,34 @@ const Artists: React.FC = () => {
                 <p className="text-lg leading-relaxed mb-8 text-white/80">
                   {currentArtist.description}
                 </p>
-                
+
                 {/* Social Links */}
                 <div className="flex space-x-4 mb-8">
-                  <a href="#" className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors"
+                  >
                     <Instagram size={20} />
                     <span>{currentArtist.social.instagram}</span>
                   </a>
-                  <a href="#" className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors"
+                  >
                     <Youtube size={20} />
                     <span>{currentArtist.social.youtube}</span>
                   </a>
-                  <a href="#" className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors"
+                  >
                     <Twitter size={20} />
                     <span>{currentArtist.social.twitter}</span>
                   </a>
                 </div>
-                
+
                 <div className="flex space-x-4">
-                  <motion.button 
+                  <motion.button
                     className="bg-white text-black px-8 py-4 font-bold tracking-wider hover:bg-white/90 transition-all duration-300 flex items-center space-x-2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -197,7 +261,7 @@ const Artists: React.FC = () => {
                     <Play size={20} />
                     <span>LISTEN NOW</span>
                   </motion.button>
-                  <motion.button 
+                  <motion.button
                     className="border-2 border-white text-white px-8 py-4 font-bold tracking-wider hover:bg-white hover:text-black transition-all duration-300 flex items-center space-x-2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -211,7 +275,9 @@ const Artists: React.FC = () => {
 
             {/* Modeling Photos */}
             <div className="mb-20">
-              <h3 className="text-3xl font-bold mb-8 tracking-wider">MODELING SHOTS</h3>
+              <h3 className="text-3xl font-bold mb-8 tracking-wider">
+                MODELING SHOTS
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {currentArtist.modelingShots.map((shot, index) => (
                   <motion.div
@@ -252,7 +318,7 @@ const Artists: React.FC = () => {
                       transition={{ delay: index * 0.1 }}
                     >
                       <div className="flex items-center space-x-4">
-                        <motion.button 
+                        <motion.button
                           className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
@@ -261,7 +327,9 @@ const Artists: React.FC = () => {
                         </motion.button>
                         <div>
                           <div className="font-bold">{track.title}</div>
-                          <div className="text-sm text-white/60">{track.plays} plays</div>
+                          <div className="text-sm text-white/60">
+                            {track.plays} plays
+                          </div>
                         </div>
                       </div>
                       <span className="text-white/60">{track.duration}</span>
@@ -298,7 +366,9 @@ const Artists: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <div className="font-bold text-sm">{video.title}</div>
-                        <div className="text-xs text-white/60">{video.views} views</div>
+                        <div className="text-xs text-white/60">
+                          {video.views} views
+                        </div>
                       </div>
                     </motion.div>
                   ))}

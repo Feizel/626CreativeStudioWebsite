@@ -10,8 +10,7 @@ const Artists: React.FC = () => {
       genre: "Hip-Hop",
       description:
         "A rising star in the hip-hop scene, POLLUXX brings raw energy and authentic storytelling to every track. Known for his distinctive flow and powerful lyricism.",
-      image:
-        "https://images.pexels.com/photos/1906157/pexels-photo-1906157.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Polluxx.JPG",
       color: "from-purple-500 to-pink-500",
       tracks: [
         { title: "Pt.1", duration: "3:24" },
@@ -35,9 +34,8 @@ const Artists: React.FC = () => {
       name: "Welo",
       genre: "Hip-Hop & R&B",
       description:
-        "Zone seamlessly blends hip-hop and R&B, creating a unique sound that's both smooth and hard-hitting. His versatility and vocal range set him apart.",
-      image:
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "Sicelo Welo seamlessly blends hip-hop and R&B, creating a unique sound that's both smooth and hard-hitting. His versatility and vocal range set him apart.",
+      image: "/Welo.JPG",
       color: "from-blue-500 to-cyan-500",
       tracks: [
         { title: "Ungakhali", duration: "4:12" },
@@ -62,8 +60,7 @@ const Artists: React.FC = () => {
       genre: "Hip-Hop & Trap",
       description:
         "SKATE brings the heat with his trap-influenced beats and aggressive delivery. His music captures the essence of street culture and modern urban life.",
-      image:
-        "https://images.pexels.com/photos/1321909/pexels-photo-1321909.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Skate.JPG",
       color: "from-yellow-500 to-orange-500",
       tracks: [
         { title: "Put in the Work & Step", duration: "2:45" },
