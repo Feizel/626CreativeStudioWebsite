@@ -17,7 +17,7 @@ const Services: React.FC = () => {
         "Artist Development",
         "Studio Sessions"
       ],
-      image: "https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/music_production.jpg"
     },
     {
       icon: <Palette className="w-12 h-12" />,
@@ -30,7 +30,7 @@ const Services: React.FC = () => {
         "Digital Art & Graphics",
         "Web Design"
       ],
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/creative_design.jpg"
     },
     {
       icon: <ShoppingBag className="w-12 h-12" />,
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
         "Print Design",
         "Product Photography"
       ],
-      image: "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/merch.PNG"
     },
     {
       icon: <Calendar className="w-12 h-12" />,
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
         "Stage Design",
         "Event Marketing"
       ],
-      image: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/event_production.jpg"
     },
     {
       icon: <Users className="w-12 h-12" />,
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
         "Contract Negotiation",
         "Strategic Planning"
       ],
-      image: "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/artist_management.jpg"
     },
     {
       icon: <Gamepad2 className="w-12 h-12" />,
@@ -82,7 +82,7 @@ const Services: React.FC = () => {
         "VR/AR Projects",
         "Mobile Apps"
       ],
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/gaming.jpg"
     },
     {
       icon: <Headphones className="w-12 h-12" />,
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
         "Podcast Production",
         "Audio Restoration"
       ],
-      image: "https://images.pexels.com/photos/744780/pexels-photo-744780.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/audio_engineering.jpg"
     },
     {
       icon: <Camera className="w-12 h-12" />,
@@ -108,7 +108,7 @@ const Services: React.FC = () => {
         "Video Editing",
         "Motion Graphics"
       ],
-      image: "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/services photos/visual_content.jpg"
     }
   ];
 

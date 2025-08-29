@@ -34,7 +34,7 @@ const Artists: React.FC = () => {
       }
     },
     {
-      name: "ZONE",
+      name: "SICELO WELO",
       genre: "Hip-Hop & R&B",
       description: "Zone seamlessly blends hip-hop and R&B, creating a unique sound that's both smooth and hard-hitting. His versatility and vocal range set him apart in the contemporary music scene.",
       image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
