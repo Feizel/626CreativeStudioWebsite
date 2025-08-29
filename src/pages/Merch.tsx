@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, Star, ArrowRight, Filter, X, Truck, Shield, RotateCcw } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ShoppingBag,
+  Star,
+  ArrowRight,
+  Filter,
+  X,
+  Truck,
+  Shield,
+  RotateCcw,
+} from "lucide-react";
 
 const Merch: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState('ALL');
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
   const [showFullCollection, setShowFullCollection] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
 
-  const categories = ['ALL', 'HOODIES', 'T-SHIRTS', 'ACCESSORIES', 'LIMITED'];
+  const categories = ["ALL", "HOODIES", "T-SHIRTS", "ACCESSORIES", "LIMITED"];
 
   const merchItems = [
     {
@@ -18,7 +27,7 @@ const Merch: React.FC = () => {
       rating: 4.9,
       category: "HOODIES",
       isLimited: false,
-      colors: ['Black']
+      colors: ["Black"],
     },
     {
       name: "626 CREATIVE STUDIO GREY HOODIE",
@@ -28,7 +37,7 @@ const Merch: React.FC = () => {
       rating: 4.9,
       category: "HOODIES",
       isLimited: false,
-      colors: ['Gray']
+      colors: ["Gray"],
     },
     {
       name: "626 BLACK T-SHIRT",
@@ -38,7 +47,7 @@ const Merch: React.FC = () => {
       rating: 4.8,
       category: "T-SHIRTS",
       isLimited: false,
-      colors: ['Black']
+      colors: ["Black"],
     },
     {
       name: "626 STOLEN FROM T-SHIRT",
@@ -48,7 +57,7 @@ const Merch: React.FC = () => {
       rating: 4.8,
       category: "T-SHIRTS",
       isLimited: true,
-      colors: ['Black']
+      colors: ["Black"],
     },
     {
       name: "626 NAVY BASEBALL CAP",
@@ -58,7 +67,7 @@ const Merch: React.FC = () => {
       rating: 4.7,
       category: "ACCESSORIES",
       isLimited: false,
-      colors: ['Navy']
+      colors: ["Navy"],
     },
     {
       name: "626 UNIVERSITY JACKET PREMIUM",
@@ -68,7 +77,7 @@ const Merch: React.FC = () => {
       rating: 5.0,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Black', 'White']
+      colors: ["Black", "White"],
     },
     {
       name: "626 SKATE SWEATPANTS",
@@ -78,7 +87,7 @@ const Merch: React.FC = () => {
       rating: 4.8,
       category: "HOODIES",
       isLimited: false,
-      colors: ['Black', 'Gray']
+      colors: ["Black", "Gray"],
     },
     {
       name: "626 AK47 GREY HOODIE",
@@ -88,7 +97,7 @@ const Merch: React.FC = () => {
       rating: 4.9,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Gray']
+      colors: ["Gray"],
     },
     {
       name: "B&W 626 JACKET ZIPPER",
@@ -98,8 +107,8 @@ const Merch: React.FC = () => {
       rating: 5.0,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Black', 'White']
-    }
+      colors: ["Black", "White"],
+    },
   ];
 
   const fullCollection = [
@@ -112,7 +121,7 @@ const Merch: React.FC = () => {
       rating: 4.9,
       category: "HOODIES",
       isLimited: false,
-      colors: ['Black', 'Gray']
+      colors: ["Black", "Gray"],
     },
     {
       name: "626 ASSORTED COLOURS HOODIES",
@@ -122,7 +131,7 @@ const Merch: React.FC = () => {
       rating: 4.8,
       category: "HOODIES",
       isLimited: false,
-      colors: ['Black', 'Gray', 'White']
+      colors: ["Black", "Gray", "White"],
     },
     {
       name: "626 GREY AND BLACK JACKETS",
@@ -132,7 +141,7 @@ const Merch: React.FC = () => {
       rating: 5.0,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Black', 'Gray']
+      colors: ["Black", "Gray"],
     },
     {
       name: "626 NAVY BASEBALL CAP 2",
@@ -142,7 +151,7 @@ const Merch: React.FC = () => {
       rating: 4.7,
       category: "ACCESSORIES",
       isLimited: false,
-      colors: ['Navy']
+      colors: ["Navy"],
     },
     {
       name: "626 UNIVERSITY JACKET PREMIUM 2",
@@ -152,7 +161,7 @@ const Merch: React.FC = () => {
       rating: 5.0,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Black', 'White']
+      colors: ["Black", "White"],
     },
     {
       name: "W&B 626 JACKET ZIPPER",
@@ -162,27 +171,49 @@ const Merch: React.FC = () => {
       rating: 5.0,
       category: "HOODIES",
       isLimited: true,
-      colors: ['White', 'Black']
+      colors: ["White", "Black"],
     },
     {
-      name: "WELO HOODIE PINK",
+      name: "SICELO WELO HOODIE PINK",
       price: "R650",
       originalPrice: "R850",
       image: "/clothing line/Welo Hoddie Pink.PNG",
       rating: 4.9,
       category: "HOODIES",
       isLimited: true,
-      colors: ['Black']
-    }
+      colors: ["Black"],
+    },
+    {
+      name: "626 OFFSET T-SHIRT",
+      price: "R450",
+      originalPrice: "R650",
+      image: "/clothing line/626 Offset T-Shirt.PNG",
+      rating: 4.8,
+      category: "T-SHIRTS",
+      isLimited: false,
+      colors: ["Black", "White"],
+    },
+    {
+      name: "626 NORMAL T-SHIRT",
+      price: "R450",
+      originalPrice: "R650",
+      image: "/clothing line/626 Normal T-Shirt.PNG",
+      rating: 4.8,
+      category: "T-SHIRTS",
+      isLimited: false,
+      colors: ["Black", "White"],
+    },
   ];
 
   const itemsToShow = showFullCollection ? fullCollection : merchItems;
-  const filteredItems = selectedCategory === 'ALL' 
-    ? itemsToShow 
-    : itemsToShow.filter(item => 
-        item.category === selectedCategory || 
-        (selectedCategory === 'LIMITED' && item.isLimited)
-      );
+  const filteredItems =
+    selectedCategory === "ALL"
+      ? itemsToShow
+      : itemsToShow.filter(
+          (item) =>
+            item.category === selectedCategory ||
+            (selectedCategory === "LIMITED" && item.isLimited)
+        );
 
   return (
     <motion.div
@@ -205,7 +236,8 @@ const Merch: React.FC = () => {
               MERCH COLLECTION
             </h1>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
-              WEAR YOUR CREATIVITY WITH OUR EXCLUSIVE CLOTHING LINE AND ACCESSORIES
+              WEAR YOUR CREATIVITY WITH OUR EXCLUSIVE CLOTHING LINE AND
+              ACCESSORIES
             </p>
           </motion.div>
 
@@ -218,8 +250,8 @@ const Merch: React.FC = () => {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-3 rounded-lg font-bold text-sm tracking-wider transition-all duration-300 ${
                     selectedCategory === category
-                      ? 'bg-white text-black'
-                      : 'text-white/60 hover:text-white hover:bg-white/10'
+                      ? "bg-white text-black"
+                      : "text-white/60 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   {category}
@@ -233,7 +265,7 @@ const Merch: React.FC = () => {
       {/* Products Grid */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
             layout
           >
@@ -259,7 +291,7 @@ const Merch: React.FC = () => {
                       LIMITED
                     </div>
                   )}
-                  <motion.button 
+                  <motion.button
                     className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -267,49 +299,72 @@ const Merch: React.FC = () => {
                     <ShoppingBag size={20} className="text-white" />
                   </motion.button>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-white/60 text-sm font-medium tracking-wider">{item.category}</span>
+                    <span className="text-white/60 text-sm font-medium tracking-wider">
+                      {item.category}
+                    </span>
                     <div className="flex items-center space-x-1">
                       <Star size={14} className="text-white fill-current" />
-                      <span className="text-white/60 text-sm">{item.rating}</span>
+                      <span className="text-white/60 text-sm">
+                        {item.rating}
+                      </span>
                     </div>
                   </div>
-                  
-                  <h3 className="font-bold text-lg mb-3 tracking-wide h-12 flex items-start">{item.name}</h3>
-                  
+
+                  <h3 className="font-bold text-lg mb-3 tracking-wide h-12 flex items-start">
+                    {item.name}
+                  </h3>
+
                   <div className="flex items-center space-x-2 mb-4">
                     {item.colors.map((color, colorIndex) => (
                       <div
                         key={colorIndex}
                         className={`w-4 h-4 rounded-full border border-white/30 ${
-                          color === 'Black' ? 'bg-black' :
-                          color === 'White' ? 'bg-white' :
-                          color === 'Gray' ? 'bg-gray-500' :
-                          color === 'Red' ? 'bg-red-500' :
-                          color === 'Navy' ? 'bg-blue-900' :
-                          color === 'Gold' ? 'bg-yellow-500' :
-                          color === 'Silver' ? 'bg-gray-300' : 'bg-gray-500'
+                          color === "Black"
+                            ? "bg-black"
+                            : color === "White"
+                            ? "bg-white"
+                            : color === "Gray"
+                            ? "bg-gray-500"
+                            : color === "Red"
+                            ? "bg-red-500"
+                            : color === "Navy"
+                            ? "bg-blue-900"
+                            : color === "Gold"
+                            ? "bg-yellow-500"
+                            : color === "Silver"
+                            ? "bg-gray-300"
+                            : "bg-gray-500"
                         }`}
                       />
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col">
                       <div className="flex items-center space-x-2 mb-1">
-                        <span className="text-2xl font-black">{item.price}</span>
-                        <span className="text-white/40 line-through text-sm">{item.originalPrice}</span>
+                        <span className="text-2xl font-black">
+                          {item.price}
+                        </span>
+                        <span className="text-white/40 line-through text-sm">
+                          {item.originalPrice}
+                        </span>
                       </div>
-                      <span className="text-white/60 text-xs font-medium">In Stock</span>
+                      <span className="text-white/60 text-xs font-medium">
+                        In Stock
+                      </span>
                     </div>
-                    <motion.button 
+                    <motion.button
                       className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-300 shadow-lg group"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                     >
-                      <ShoppingBag size={16} className="text-black group-hover:scale-110 transition-transform" />
+                      <ShoppingBag
+                        size={16}
+                        className="text-black group-hover:scale-110 transition-transform"
+                      />
                     </motion.button>
                   </div>
                 </div>
@@ -325,8 +380,13 @@ const Merch: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowFullCollection(!showFullCollection)}
             >
-              <span>{showFullCollection ? 'SHOW LESS' : 'VIEW FULL COLLECTION'}</span>
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <span>
+                {showFullCollection ? "SHOW LESS" : "VIEW FULL COLLECTION"}
+              </span>
+              <ArrowRight
+                size={20}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </motion.button>
           </div>
         </div>
@@ -344,7 +404,8 @@ const Merch: React.FC = () => {
               STAY UPDATED
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Be the first to know about new drops, exclusive releases, and special offers
+              Be the first to know about new drops, exclusive releases, and
+              special offers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
               <input
@@ -382,7 +443,9 @@ const Merch: React.FC = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center p-6 border-b border-white/20">
-                <h3 className="text-2xl font-bold text-white">{selectedItem.name}</h3>
+                <h3 className="text-2xl font-bold text-white">
+                  {selectedItem.name}
+                </h3>
                 <button
                   onClick={() => setSelectedItem(null)}
                   className="text-white/60 hover:text-white transition-colors"
@@ -390,7 +453,7 @@ const Merch: React.FC = () => {
                   <X size={24} />
                 </button>
               </div>
-              
+
               <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <img
@@ -399,45 +462,64 @@ const Merch: React.FC = () => {
                     className="w-full h-96 object-cover rounded-lg border border-white/20"
                   />
                 </div>
-                
+
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-white/60 text-sm font-medium tracking-wider uppercase">{selectedItem.category}</span>
+                    <span className="text-white/60 text-sm font-medium tracking-wider uppercase">
+                      {selectedItem.category}
+                    </span>
                     <div className="flex items-center space-x-1">
                       <Star size={16} className="text-white fill-current" />
-                      <span className="text-white/80 text-sm font-medium">{selectedItem.rating}</span>
+                      <span className="text-white/80 text-sm font-medium">
+                        {selectedItem.rating}
+                      </span>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 mb-6">
-                    <span className="text-4xl font-black text-white">{selectedItem.price}</span>
-                    <span className="text-white/40 line-through text-xl">{selectedItem.originalPrice}</span>
+                    <span className="text-4xl font-black text-white">
+                      {selectedItem.price}
+                    </span>
+                    <span className="text-white/40 line-through text-xl">
+                      {selectedItem.originalPrice}
+                    </span>
                     {selectedItem.isLimited && (
                       <span className="bg-white text-black px-3 py-1 text-xs font-bold tracking-wider rounded-full">
                         LIMITED
                       </span>
                     )}
                   </div>
-                  
+
                   <div className="mb-6">
-                    <h4 className="text-white font-semibold mb-3">Available Colors:</h4>
+                    <h4 className="text-white font-semibold mb-3">
+                      Available Colors:
+                    </h4>
                     <div className="flex items-center space-x-3">
-                      {selectedItem.colors.map((color: string, colorIndex: number) => (
-                        <div
-                          key={colorIndex}
-                          className={`w-8 h-8 rounded-full border-2 border-white/20 cursor-pointer hover:border-white/60 transition-colors ${
-                            color === 'Black' ? 'bg-black' :
-                            color === 'White' ? 'bg-white' :
-                            color === 'Gray' ? 'bg-gray-500' :
-                            color === 'Navy' ? 'bg-blue-900' : 'bg-gray-500'
-                          }`}
-                        />
-                      ))}
+                      {selectedItem.colors.map(
+                        (color: string, colorIndex: number) => (
+                          <div
+                            key={colorIndex}
+                            className={`w-8 h-8 rounded-full border-2 border-white/20 cursor-pointer hover:border-white/60 transition-colors ${
+                              color === "Black"
+                                ? "bg-black"
+                                : color === "White"
+                                ? "bg-white"
+                                : color === "Gray"
+                                ? "bg-gray-500"
+                                : color === "Navy"
+                                ? "bg-blue-900"
+                                : "bg-gray-500"
+                            }`}
+                          />
+                        )
+                      )}
                     </div>
                   </div>
-                  
+
                   <div className="mb-8">
-                    <h4 className="text-white font-semibold mb-3">Product Details:</h4>
+                    <h4 className="text-white font-semibold mb-3">
+                      Product Details:
+                    </h4>
                     <div className="space-y-2 text-white/80">
                       <div className="flex items-center space-x-2">
                         <Shield size={16} />
@@ -453,7 +535,7 @@ const Merch: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <motion.button
                     className="w-full bg-white text-black py-4 font-bold tracking-wider rounded-lg hover:bg-white/90 transition-all duration-300 flex items-center justify-center space-x-2"
                     whileHover={{ scale: 1.02 }}
